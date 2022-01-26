@@ -85,7 +85,7 @@
 (defmacro sqr [n]
   `(let [n# (unchecked-int ~n)] (unchecked-multiply-int n# n#)))
 
-#_(defn sieve-ba
+(defn sieve-ba
   "boolean-array storage
    Returns the raw sieve with each index representing the odd numbers * 2
    Skips even indexes.
