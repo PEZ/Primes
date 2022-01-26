@@ -82,10 +82,10 @@
           (recur (+ p 2))))
       primes)))
 
-(defmacro sqr [n]
+(defmacro sqr-ben-sless [n]
   `(let [n# (unchecked-int ~n)] (unchecked-multiply-int n# n#)))
 
-#_(defn sieve-ba
+(defn sieve-ba
   "boolean-array storage
    Returns the raw sieve with each index representing the odd numbers * 2
    Skips even indexes.
@@ -99,7 +99,7 @@
       (loop [p 3]
         (when (< p sqrt-n)
           (when (aget primes (bit-shift-right p 1))
-            (loop [i (bit-shift-right (sqr p) 1)]
+            (loop [i (bit-shift-right (sqr-ben-sless p) 1)]
               (when (< i half-n)
                 (aset primes i false)
                 (recur (unchecked-add i p)))))
@@ -120,17 +120,23 @@
 
 
 (defn sieve-axvr
+  "This returns a boolean-array where the index of each false bit is the prime
+  number (+ 1 (* 2 index)).  Despite this being unidiomatic, the result of this
+  function can be used by the benchmark without needing to convert it into
+  a proper list of primes. [1]
+
+  [1]: <https://github.com/PlummersSoftwareLLC/Primes/discussions/794>"
   [^long limit]
   (let [q (inc (Math/sqrt limit))
-        half-limit (>> limit 1)
-        ^booleans sieve (boolean-array half-limit)]
+        ^booleans sieve (boolean-array (>> limit 1))]
     (loop [factor (int 3)]
       (when (< factor q)
         (if-not (aget sieve (>> factor 1))
-          (loop [num (sqr factor)]
-            (when (< num half-limit)
-              (aset sieve num true)
-              (recur (+ num factor)))))
+          (let [factor*2 (<< factor 1)]
+            (loop [num (sqr factor)]
+              (when (< num limit)
+                (aset sieve (>> num 1) true)
+                (recur (+ num factor*2))))))
         (recur (+ 2 factor))))
     sieve))
 
@@ -168,7 +174,8 @@
   (time (do (sieve-ba 1000000) nil))
   
   (require '[clj-async-profiler.core :as prof])
-  (prof/profile (dotimes [_i 100000] (sieve-ba 1000000))))
+  (prof/profile (dotimes [_i 100000] (sieve-ba 1000000)))
+  (prof/serve-files 8080))
 
 (defn sieve-bs
   "Java BitSet storage
