@@ -61,7 +61,7 @@
   (time (count (loot (sieve 1000000))))
   (with-progress-reporting (quick-bench (sieve 1000000))))
 
-(defn sieve-ba
+(defn sieve-ba-algo-fix
   "boolean-array storage
    Returns the raw sieve with each index representing the odd numbers * 2
    Skips even indexes.
@@ -85,7 +85,7 @@
 (defmacro sqr-ben-sless [n]
   `(let [n# (unchecked-int ~n)] (unchecked-multiply-int n# n#)))
 
-(defn sieve-ba
+(defn sieve-ba-unchecked-1
   "boolean-array storage
    Returns the raw sieve with each index representing the odd numbers * 2
    Skips even indexes.
@@ -105,6 +105,47 @@
                 (recur (unchecked-add i p)))))
           (recur (unchecked-add p 2))))
       primes)))
+
+(defn sieve-ba-unchecked-2
+  "boolean-array storage
+   Returns the raw sieve with each index representing the odd numbers * 2
+   Skips even indexes.
+   No parallelisation."
+  [^long n]
+  (if (< n 2)
+    (boolean-array n)
+    (let [half-n (long (bit-shift-right n 1))
+          primes (boolean-array half-n true)
+          sqrt-n (long (Math/ceil (Math/sqrt (double n))))]
+      (loop [p (long 3)]
+        (when (< p sqrt-n)
+          (when (aget primes (bit-shift-right p 1))
+            (loop [i (bit-shift-right (sqr-ben-sless p) 1)]
+              (when (< i half-n)
+                (aset primes i false)
+                (recur (unchecked-add-int i p)))))
+          (recur (unchecked-add-int p 2))))
+      primes)))
+
+(defn sieve-ba-skip-even
+  "boolean-array storage
+   Returns the raw sieve with each index representing the odd numbers * 2
+   Skips even indexes.
+   No parallelisation."
+  [^long n]
+  (if (< n 2)
+    (boolean-array n)
+    (let [primes (boolean-array (bit-shift-right n 1) true)
+          sqrt-n (long (Math/ceil (Math/sqrt n)))]
+      (loop [p 3]
+        (if-not (< p sqrt-n)
+          primes
+          (do
+            (loop [i (* p p)]
+              (when (< i n)
+                (aset primes (bit-shift-right i 1) false)
+                (recur (+ i p p))))
+            (recur (+ p 2))))))))
 
 (defmacro << [n shift]
   `(bit-shift-left ~n ~shift))
@@ -160,6 +201,7 @@
                               2
                               (inc (* i 2)))))
                   raw-sieve))
+  (def sieve-ba sieve-ba-unchecked-2)
   (loot (sieve-ba 1))
   (loot (sieve-ba 10))
   (count (sieve->primes (sieve-axvr 10)))
@@ -168,14 +210,22 @@
   (loot (sieve-ba 100))
   (count (loot (sieve-ba 1000)))
   (count (loot (sieve-ba 1000000)))
-  (with-progress-reporting (quick-bench (sieve-ba 1000000)))
+  (with-progress-reporting (quick-bench (sieve-ba-skip-even 1000000)))
+  (with-progress-reporting (quick-bench (sieve-ba-algo-fix 1000000)))
+  (with-progress-reporting (quick-bench (sieve-ba-unchecked-1 1000000)))
+  (with-progress-reporting (quick-bench (sieve-ba-unchecked-2 1000000)))
   (with-progress-reporting (quick-bench (sieve-axvr 1000000)))
   (with-progress-reporting (bench (sieve-ba 1000000)))
   (time (do (sieve-ba 1000000) nil))
-  
+
   (require '[clj-async-profiler.core :as prof])
-  (prof/profile (dotimes [_i 100000] (sieve-ba 1000000)))
-  (prof/serve-files 8080))
+  (prof/profile (dotimes [_i 100000] (sieve-ba-skip-even 1000000)))
+  (prof/profile (dotimes [_i 100000] (sieve-ba-algo-fix 1000000)))
+  (prof/profile (dotimes [_i 100000] (sieve-ba-unchecked-1 1000000)))
+  (prof/profile (dotimes [_i 100000] (sieve-ba-unchecked-2 1000000)))
+  (prof/profile (dotimes [_i 100000] (sieve-axvr 1000000)))
+  (prof/serve-files 8080)
+  )
 
 (defn sieve-bs
   "Java BitSet storage
@@ -562,7 +612,7 @@
                 :count-f (fn [primes] (.cardinality primes))
                 :threads 1
                 :bits 1}
-   :boolean-array {:sieve sieve-ba
+   :boolean-array {:sieve sieve-ba-unchecked-2
                    :count-f (fn [primes] (count (filter true? primes)))
                    :threads 1
                    :bits 8}
