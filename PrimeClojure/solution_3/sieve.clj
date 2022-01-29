@@ -1,7 +1,8 @@
 (ns sieve
   "Clojure implementations of The Sieve of Eratosthenes by Peter Strömberg (a.k.a. PEZ)"
   (:require [criterium.core :refer [bench quick-bench with-progress-reporting]])
-  (:import [java.time Instant Duration]))
+  (:import [java.time Instant Duration])
+  (:gen-class))
 
 ;; Disable overflow checks on mathematical ops and warn when compiler is unable
 ;; to optimise correctly.
@@ -99,6 +100,7 @@
   (count (loot (sieve-ba 1000)))
   (count (loot (sieve-ba 1000000)))
   (with-progress-reporting (quick-bench (sieve-ba 1000000)))
+  (with-progress-reporting (quick-bench (sieve-8-bit/sieve 1000000)))
   (with-progress-reporting (bench (sieve-ba 1000000)))
   (time (do (sieve-ba 1000000) nil)))
 
@@ -510,13 +512,16 @@
 
 (defn run [{:keys [variant warm-up?]
             :or   {variant :boolean-array
-                   warm-up? false}}]
+                   warm-up? true}}]
   (let [conf (confs variant)
         sieve (:sieve conf)]
     (when warm-up?
       ;; Warm-up reduces the variability of results.
       (format-results (merge conf (benchmark sieve) {:variant variant})))
     (println (format-results (merge conf (benchmark sieve) {:variant variant})))))
+
+(defn -main [& args]
+  (run (first args)))
 
 (comment
   (run {:warm-up? true})
