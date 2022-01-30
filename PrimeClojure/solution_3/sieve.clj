@@ -62,9 +62,6 @@
   (time (count (loot (sieve 1000000))))
   (with-progress-reporting (quick-bench (sieve 1000000))))
 
-(defmacro sqr [n]
-  `(let [n# (unchecked-int ~n)] (unchecked-multiply-int n# n#)))
-
 (set! *unchecked-math* true)
 
 (defn sieve-ba
