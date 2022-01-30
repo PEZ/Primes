@@ -1,7 +1,7 @@
 #!/bin/sh
 
-clojure -X sieve/run :variant :vector :warm-up? false
-clojure -X sieve/run :variant :vector-transient :warm-up? false
+#clojure -X sieve/run :variant :vector :warm-up? false
+#clojure -X sieve/run :variant :vector-transient :warm-up? false
 clojure -X sieve/run :variant :bitset :warm-up? true
 #clojure -X sieve/run :variant :bitset-all :warm-up? false
 #clojure -X sieve/run :variant :bitset-pre :warm-up? false
