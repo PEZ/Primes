@@ -1,0 +1,499 @@
+Passes: 2713, Time: 5.001056960, Avg: 0.0018433678, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2713;5.001056960;1;algorithm=base,faithful=yes,bits=1
+Passes: 9375, Time: 5.000438101, Avg: 5.333801E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9375;5.000438101;1;algorithm=base,faithful=yes,bits=8
+1
+Passes: 5954, Time: 5.000913215, Avg: 8.3992496E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5954;5.000913215;1;algorithm=base,faithful=yes,bits=1
+Passes: 9293, Time: 5.000465233, Avg: 5.380894E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9293;5.000465233;1;algorithm=base,faithful=yes,bits=8
+2
+Passes: 5951, Time: 5.000706793, Avg: 8.403137E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5951;5.000706793;1;algorithm=base,faithful=yes,bits=1
+Passes: 9423, Time: 5.000289079, Avg: 5.3064723E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9423;5.000289079;1;algorithm=base,faithful=yes,bits=8
+3
+Passes: 5830, Time: 5.000726511, Avg: 8.577575E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5830;5.000726511;1;algorithm=base,faithful=yes,bits=1
+Passes: 9276, Time: 5.001284827, Avg: 5.3916394E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9276;5.001284827;1;algorithm=base,faithful=yes,bits=8
+4
+Passes: 2728, Time: 5.001265503, Avg: 0.0018333085, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2728;5.001265503;1;algorithm=base,faithful=yes,bits=1
+Passes: 9214, Time: 5.001175816, Avg: 5.427801E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9214;5.001175816;1;algorithm=base,faithful=yes,bits=8
+5
+Passes: 2727, Time: 5.001493988, Avg: 0.0018340645, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2727;5.001493988;1;algorithm=base,faithful=yes,bits=1
+Passes: 9414, Time: 5.000798438, Avg: 5.3120864E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9414;5.000798438;1;algorithm=base,faithful=yes,bits=8
+6
+Passes: 2748, Time: 5.001071325, Avg: 0.001819895, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2748;5.001071325;1;algorithm=base,faithful=yes,bits=1
+Passes: 9273, Time: 5.000908123, Avg: 5.3929776E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9273;5.000908123;1;algorithm=base,faithful=yes,bits=8
+7
+Passes: 5970, Time: 5.000541373, Avg: 8.376116E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5970;5.000541373;1;algorithm=base,faithful=yes,bits=1
+Passes: 9305, Time: 5.000834306, Avg: 5.374352E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9305;5.000834306;1;algorithm=base,faithful=yes,bits=8
+8
+Passes: 2727, Time: 5.002096279, Avg: 0.0018342854, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2727;5.002096279;1;algorithm=base,faithful=yes,bits=1
+Passes: 9195, Time: 5.000482134, Avg: 5.438262E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9195;5.000482134;1;algorithm=base,faithful=yes,bits=8
+9
+Passes: 2791, Time: 5.000941136, Avg: 0.0017918098, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2791;5.000941136;1;algorithm=base,faithful=yes,bits=1
+Passes: 9326, Time: 5.000563912, Avg: 5.36196E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9326;5.000563912;1;algorithm=base,faithful=yes,bits=8
+10
+Passes: 2777, Time: 5.001686175, Avg: 0.0018011114, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2777;5.001686175;1;algorithm=base,faithful=yes,bits=1
+Passes: 9121, Time: 5.000895981, Avg: 5.4828374E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9121;5.000895981;1;algorithm=base,faithful=yes,bits=8
+11
+Passes: 5786, Time: 5.000856780, Avg: 8.643029E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5786;5.000856780;1;algorithm=base,faithful=yes,bits=1
+Passes: 9249, Time: 5.000891907, Avg: 5.4069544E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9249;5.000891907;1;algorithm=base,faithful=yes,bits=8
+12
+Passes: 5864, Time: 5.000859553, Avg: 8.528069E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5864;5.000859553;1;algorithm=base,faithful=yes,bits=1
+Passes: 9132, Time: 5.000657989, Avg: 5.4759724E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9132;5.000657989;1;algorithm=base,faithful=yes,bits=8
+13
+Passes: 2747, Time: 5.001454063, Avg: 0.0018206968, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2747;5.001454063;1;algorithm=base,faithful=yes,bits=1
+Passes: 9148, Time: 5.001122454, Avg: 5.4669025E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9148;5.001122454;1;algorithm=base,faithful=yes,bits=8
+14
+Passes: 5724, Time: 5.001124554, Avg: 8.737115E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5724;5.001124554;1;algorithm=base,faithful=yes,bits=1
+Passes: 9327, Time: 5.000728343, Avg: 5.361561E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9327;5.000728343;1;algorithm=base,faithful=yes,bits=8
+15
+Passes: 2723, Time: 5.000877562, Avg: 0.0018365324, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2723;5.000877562;1;algorithm=base,faithful=yes,bits=1
+Passes: 9341, Time: 5.001187538, Avg: 5.3540175E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9341;5.001187538;1;algorithm=base,faithful=yes,bits=8
+16
+Passes: 2734, Time: 5.000958281, Avg: 0.0018291727, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2734;5.000958281;1;algorithm=base,faithful=yes,bits=1
+Passes: 9347, Time: 5.001144593, Avg: 5.3505343E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9347;5.001144593;1;algorithm=base,faithful=yes,bits=8
+17
+Passes: 2706, Time: 5.001889239, Avg: 0.0018484439, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2706;5.001889239;1;algorithm=base,faithful=yes,bits=1
+Passes: 9328, Time: 5.000922005, Avg: 5.3611945E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9328;5.000922005;1;algorithm=base,faithful=yes,bits=8
+18
+Passes: 2718, Time: 5.000475834, Avg: 0.001839763, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2718;5.000475834;1;algorithm=base,faithful=yes,bits=1
+Passes: 9115, Time: 5.000413935, Avg: 5.485918E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9115;5.000413935;1;algorithm=base,faithful=yes,bits=8
+19
+Passes: 2794, Time: 5.001436954, Avg: 0.0017900633, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2794;5.001436954;1;algorithm=base,faithful=yes,bits=1
+Passes: 9160, Time: 5.001081584, Avg: 5.459696E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9160;5.001081584;1;algorithm=base,faithful=yes,bits=8
+20
+Passes: 5870, Time: 5.001417649, Avg: 8.5203024E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5870;5.001417649;1;algorithm=base,faithful=yes,bits=1
+Passes: 9272, Time: 5.001333587, Avg: 5.3940184E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9272;5.001333587;1;algorithm=base,faithful=yes,bits=8
+21
+Passes: 5937, Time: 5.000920082, Avg: 8.4233115E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5937;5.000920082;1;algorithm=base,faithful=yes,bits=1
+Passes: 9364, Time: 5.000733033, Avg: 5.340381E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9364;5.000733033;1;algorithm=base,faithful=yes,bits=8
+22
+Passes: 2711, Time: 5.000755526, Avg: 0.0018446166, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2711;5.000755526;1;algorithm=base,faithful=yes,bits=1
+Passes: 9175, Time: 5.000270117, Avg: 5.4498855E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9175;5.000270117;1;algorithm=base,faithful=yes,bits=8
+23
+Passes: 2724, Time: 5.002210108, Avg: 0.0018363473, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2724;5.002210108;1;algorithm=base,faithful=yes,bits=1
+Passes: 9107, Time: 5.001245874, Avg: 5.49165E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9107;5.001245874;1;algorithm=base,faithful=yes,bits=8
+24
+Passes: 5742, Time: 5.001771577, Avg: 8.7108527E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5742;5.001771577;1;algorithm=base,faithful=yes,bits=1
+Passes: 9315, Time: 5.001069392, Avg: 5.368835E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9315;5.001069392;1;algorithm=base,faithful=yes,bits=8
+25
+Passes: 2769, Time: 5.001416743, Avg: 0.0018062177, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2769;5.001416743;1;algorithm=base,faithful=yes,bits=1
+Passes: 9133, Time: 5.000695023, Avg: 5.4754136E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9133;5.000695023;1;algorithm=base,faithful=yes,bits=8
+26
+Passes: 2791, Time: 5.001442754, Avg: 0.0017919895, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2791;5.001442754;1;algorithm=base,faithful=yes,bits=1
+Passes: 9342, Time: 5.000480711, Avg: 5.3526874E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9342;5.000480711;1;algorithm=base,faithful=yes,bits=8
+27
+Passes: 2741, Time: 5.000719092, Avg: 0.0018244141, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2741;5.000719092;1;algorithm=base,faithful=yes,bits=1
+Passes: 9188, Time: 5.000673031, Avg: 5.442613E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9188;5.000673031;1;algorithm=base,faithful=yes,bits=8
+28
+Passes: 2722, Time: 5.001596470, Avg: 0.0018374712, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2722;5.001596470;1;algorithm=base,faithful=yes,bits=1
+Passes: 9121, Time: 5.000744856, Avg: 5.4826715E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9121;5.000744856;1;algorithm=base,faithful=yes,bits=8
+29
+Passes: 5686, Time: 5.000701986, Avg: 8.7947625E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5686;5.000701986;1;algorithm=base,faithful=yes,bits=1
+Passes: 9311, Time: 5.000967739, Avg: 5.3710316E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9311;5.000967739;1;algorithm=base,faithful=yes,bits=8
+30
+Passes: 5929, Time: 5.001274453, Avg: 8.435275E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5929;5.001274453;1;algorithm=base,faithful=yes,bits=1
+Passes: 9226, Time: 5.000591095, Avg: 5.4201076E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9226;5.000591095;1;algorithm=base,faithful=yes,bits=8
+31
+Passes: 2756, Time: 5.000040493, Avg: 0.0018142383, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2756;5.000040493;1;algorithm=base,faithful=yes,bits=1
+Passes: 9354, Time: 5.000952417, Avg: 5.346325E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9354;5.000952417;1;algorithm=base,faithful=yes,bits=8
+32
+Passes: 5929, Time: 5.000789609, Avg: 8.434457E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5929;5.000789609;1;algorithm=base,faithful=yes,bits=1
+Passes: 9223, Time: 5.000357871, Avg: 5.4216175E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9223;5.000357871;1;algorithm=base,faithful=yes,bits=8
+33
+Passes: 5911, Time: 5.000925963, Avg: 8.4603723E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5911;5.000925963;1;algorithm=base,faithful=yes,bits=1
+Passes: 9366, Time: 5.000622545, Avg: 5.339123E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9366;5.000622545;1;algorithm=base,faithful=yes,bits=8
+34
+Passes: 2719, Time: 5.000706532, Avg: 0.0018391712, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2719;5.000706532;1;algorithm=base,faithful=yes,bits=1
+Passes: 9234, Time: 5.001160681, Avg: 5.4160284E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9234;5.001160681;1;algorithm=base,faithful=yes,bits=8
+35
+Passes: 2707, Time: 5.000763568, Avg: 0.0018473453, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2707;5.000763568;1;algorithm=base,faithful=yes,bits=1
+Passes: 9242, Time: 5.000600622, Avg: 5.4107344E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9242;5.000600622;1;algorithm=base,faithful=yes,bits=8
+36
+Passes: 5892, Time: 5.000764794, Avg: 8.4873807E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5892;5.000764794;1;algorithm=base,faithful=yes,bits=1
+Passes: 9130, Time: 5.001187888, Avg: 5.4777524E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9130;5.001187888;1;algorithm=base,faithful=yes,bits=8
+37
+Passes: 5926, Time: 5.000820415, Avg: 8.438779E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5926;5.000820415;1;algorithm=base,faithful=yes,bits=1
+Passes: 9274, Time: 5.000729546, Avg: 5.3922035E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9274;5.000729546;1;algorithm=base,faithful=yes,bits=8
+38
+Passes: 2720, Time: 5.000270356, Avg: 0.0018383347, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2720;5.000270356;1;algorithm=base,faithful=yes,bits=1
+Passes: 9344, Time: 5.000748504, Avg: 5.3518283E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9344;5.000748504;1;algorithm=base,faithful=yes,bits=8
+39
+Passes: 2753, Time: 5.000718442, Avg: 0.0018164614, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2753;5.000718442;1;algorithm=base,faithful=yes,bits=1
+Passes: 9315, Time: 5.000359106, Avg: 5.3680723E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9315;5.000359106;1;algorithm=base,faithful=yes,bits=8
+40
+Passes: 2753, Time: 5.000653539, Avg: 0.0018164379, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2753;5.000653539;1;algorithm=base,faithful=yes,bits=1
+Passes: 9415, Time: 5.000476021, Avg: 5.31118E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9415;5.000476021;1;algorithm=base,faithful=yes,bits=8
+41
+Passes: 2725, Time: 5.001435391, Avg: 0.0018353892, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2725;5.001435391;1;algorithm=base,faithful=yes,bits=1
+Passes: 9336, Time: 5.000620791, Avg: 5.3562777E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9336;5.000620791;1;algorithm=base,faithful=yes,bits=8
+42
+Passes: 2742, Time: 5.000546564, Avg: 0.0018236858, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2742;5.000546564;1;algorithm=base,faithful=yes,bits=1
+Passes: 9112, Time: 5.001028621, Avg: 5.4883986E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9112;5.001028621;1;algorithm=base,faithful=yes,bits=8
+43
+Passes: 5743, Time: 5.000818172, Avg: 8.707676E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5743;5.000818172;1;algorithm=base,faithful=yes,bits=1
+Passes: 9137, Time: 5.000103900, Avg: 5.4723694E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9137;5.000103900;1;algorithm=base,faithful=yes,bits=8
+44
+Passes: 5929, Time: 5.000797010, Avg: 8.4344693E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5929;5.000797010;1;algorithm=base,faithful=yes,bits=1
+Passes: 9254, Time: 5.000222848, Avg: 5.4033095E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9254;5.000222848;1;algorithm=base,faithful=yes,bits=8
+45
+Passes: 2723, Time: 5.001200778, Avg: 0.001836651, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2723;5.001200778;1;algorithm=base,faithful=yes,bits=1
+Passes: 9269, Time: 5.000292206, Avg: 5.3946406E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9269;5.000292206;1;algorithm=base,faithful=yes,bits=8
+46
+Passes: 2736, Time: 5.000788473, Avg: 0.0018277735, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2736;5.000788473;1;algorithm=base,faithful=yes,bits=1
+Passes: 9320, Time: 5.000743344, Avg: 5.3656043E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9320;5.000743344;1;algorithm=base,faithful=yes,bits=8
+47
+Passes: 2782, Time: 5.001225666, Avg: 0.0017977087, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2782;5.001225666;1;algorithm=base,faithful=yes,bits=1
+Passes: 9288, Time: 5.000591165, Avg: 5.383927E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9288;5.000591165;1;algorithm=base,faithful=yes,bits=8
+48
+Passes: 2764, Time: 5.001120134, Avg: 0.0018093778, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2764;5.001120134;1;algorithm=base,faithful=yes,bits=1
+Passes: 9408, Time: 5.000609773, Avg: 5.315274E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9408;5.000609773;1;algorithm=base,faithful=yes,bits=8
+49
+Passes: 2789, Time: 5.001016717, Avg: 0.0017931218, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2789;5.001016717;1;algorithm=base,faithful=yes,bits=1
+Passes: 9286, Time: 5.000474968, Avg: 5.384961E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9286;5.000474968;1;algorithm=base,faithful=yes,bits=8
+50
+Passes: 5937, Time: 5.000666032, Avg: 8.4228837E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5937;5.000666032;1;algorithm=base,faithful=yes,bits=1
+Passes: 9154, Time: 5.000347367, Avg: 5.4624723E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9154;5.000347367;1;algorithm=base,faithful=yes,bits=8
+51
+Passes: 5884, Time: 5.000914581, Avg: 8.499175E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5884;5.000914581;1;algorithm=base,faithful=yes,bits=1
+Passes: 9098, Time: 5.000681355, Avg: 5.496462E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9098;5.000681355;1;algorithm=base,faithful=yes,bits=8
+52
+Passes: 2761, Time: 5.000584127, Avg: 0.0018111496, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2761;5.000584127;1;algorithm=base,faithful=yes,bits=1
+Passes: 9266, Time: 5.001133713, Avg: 5.3972955E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9266;5.001133713;1;algorithm=base,faithful=yes,bits=8
+53
+Passes: 2721, Time: 5.001304942, Avg: 0.0018380393, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2721;5.001304942;1;algorithm=base,faithful=yes,bits=1
+Passes: 9251, Time: 5.001292257, Avg: 5.406218E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9251;5.001292257;1;algorithm=base,faithful=yes,bits=8
+54
+Passes: 5957, Time: 5.001162930, Avg: 8.395439E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5957;5.001162930;1;algorithm=base,faithful=yes,bits=1
+Passes: 9285, Time: 5.001043315, Avg: 5.3861534E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9285;5.001043315;1;algorithm=base,faithful=yes,bits=8
+55
+Passes: 2720, Time: 5.003484678, Avg: 0.0018395165, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2720;5.003484678;1;algorithm=base,faithful=yes,bits=1
+Passes: 9261, Time: 5.000559208, Avg: 5.399589E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9261;5.000559208;1;algorithm=base,faithful=yes,bits=8
+56
+Passes: 2749, Time: 5.001714686, Avg: 0.0018194669, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2749;5.001714686;1;algorithm=base,faithful=yes,bits=1
+Passes: 9081, Time: 5.000745398, Avg: 5.5068225E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9081;5.000745398;1;algorithm=base,faithful=yes,bits=8
+57
+Passes: 5970, Time: 5.000193426, Avg: 8.3755335E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5970;5.000193426;1;algorithm=base,faithful=yes,bits=1
+Passes: 9046, Time: 5.000743600, Avg: 5.528127E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9046;5.000743600;1;algorithm=base,faithful=yes,bits=8
+58
+Passes: 5734, Time: 5.000960313, Avg: 8.721591E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5734;5.000960313;1;algorithm=base,faithful=yes,bits=1
+Passes: 9280, Time: 5.000894505, Avg: 5.388895E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9280;5.000894505;1;algorithm=base,faithful=yes,bits=8
+59
+Passes: 5693, Time: 5.000371853, Avg: 8.783369E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5693;5.000371853;1;algorithm=base,faithful=yes,bits=1
+Passes: 9205, Time: 5.001015875, Avg: 5.432934E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9205;5.001015875;1;algorithm=base,faithful=yes,bits=8
+60
+Passes: 2765, Time: 5.000494051, Avg: 0.0018084969, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2765;5.000494051;1;algorithm=base,faithful=yes,bits=1
+Passes: 9322, Time: 5.000927107, Avg: 5.36465E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9322;5.000927107;1;algorithm=base,faithful=yes,bits=8
+61
+Passes: 2712, Time: 5.001752735, Avg: 0.0018443041, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2712;5.001752735;1;algorithm=base,faithful=yes,bits=1
+Passes: 9355, Time: 5.000487787, Avg: 5.3452566E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9355;5.000487787;1;algorithm=base,faithful=yes,bits=8
+62
+Passes: 5971, Time: 5.001657002, Avg: 8.376582E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5971;5.001657002;1;algorithm=base,faithful=yes,bits=1
+Passes: 9302, Time: 5.001176915, Avg: 5.3764536E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9302;5.001176915;1;algorithm=base,faithful=yes,bits=8
+63
+Passes: 2761, Time: 5.001188700, Avg: 0.0018113686, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2761;5.001188700;1;algorithm=base,faithful=yes,bits=1
+Passes: 9169, Time: 5.000399860, Avg: 5.4535933E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9169;5.000399860;1;algorithm=base,faithful=yes,bits=8
+64
+Passes: 5897, Time: 5.000662447, Avg: 8.480011E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5897;5.000662447;1;algorithm=base,faithful=yes,bits=1
+Passes: 9091, Time: 5.001076510, Avg: 5.501129E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9091;5.001076510;1;algorithm=base,faithful=yes,bits=8
+65
+Passes: 5827, Time: 5.001246913, Avg: 8.582885E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5827;5.001246913;1;algorithm=base,faithful=yes,bits=1
+Passes: 9352, Time: 5.001250986, Avg: 5.3477875E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9352;5.001250986;1;algorithm=base,faithful=yes,bits=8
+66
+Passes: 5782, Time: 5.000871079, Avg: 8.649033E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5782;5.000871079;1;algorithm=base,faithful=yes,bits=1
+Passes: 9267, Time: 5.001101325, Avg: 5.396678E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9267;5.001101325;1;algorithm=base,faithful=yes,bits=8
+67
+Passes: 2738, Time: 5.002451993, Avg: 0.001827046, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2738;5.002451993;1;algorithm=base,faithful=yes,bits=1
+Passes: 9290, Time: 5.000822735, Avg: 5.383017E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9290;5.000822735;1;algorithm=base,faithful=yes,bits=8
+68
+Passes: 2729, Time: 5.002376212, Avg: 0.0018330436, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2729;5.002376212;1;algorithm=base,faithful=yes,bits=1
+Passes: 9187, Time: 5.000989524, Avg: 5.44355E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9187;5.000989524;1;algorithm=base,faithful=yes,bits=8
+69
+Passes: 2710, Time: 5.002367344, Avg: 0.001845892, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2710;5.002367344;1;algorithm=base,faithful=yes,bits=1
+Passes: 9350, Time: 5.001285158, Avg: 5.348968E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9350;5.001285158;1;algorithm=base,faithful=yes,bits=8
+70
+Passes: 2723, Time: 5.000810982, Avg: 0.0018365079, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2723;5.000810982;1;algorithm=base,faithful=yes,bits=1
+Passes: 9076, Time: 5.000279145, Avg: 5.5093423E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9076;5.000279145;1;algorithm=base,faithful=yes,bits=8
+71
+Passes: 5685, Time: 5.001141394, Avg: 8.7970827E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5685;5.001141394;1;algorithm=base,faithful=yes,bits=1
+Passes: 9269, Time: 5.000635309, Avg: 5.395011E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9269;5.000635309;1;algorithm=base,faithful=yes,bits=8
+72
+Passes: 2778, Time: 5.001390896, Avg: 0.0018003567, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2778;5.001390896;1;algorithm=base,faithful=yes,bits=1
+Passes: 9296, Time: 5.001186576, Avg: 5.379934E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9296;5.001186576;1;algorithm=base,faithful=yes,bits=8
+73
+Passes: 2707, Time: 5.001185031, Avg: 0.0018475009, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2707;5.001185031;1;algorithm=base,faithful=yes,bits=1
+Passes: 9257, Time: 5.001074505, Avg: 5.402479E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9257;5.001074505;1;algorithm=base,faithful=yes,bits=8
+74
+Passes: 2729, Time: 5.000968669, Avg: 0.0018325279, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2729;5.000968669;1;algorithm=base,faithful=yes,bits=1
+Passes: 9272, Time: 5.000558398, Avg: 5.393182E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9272;5.000558398;1;algorithm=base,faithful=yes,bits=8
+75
+Passes: 2759, Time: 5.001028371, Avg: 0.0018126236, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2759;5.001028371;1;algorithm=base,faithful=yes,bits=1
+Passes: 9154, Time: 5.000997746, Avg: 5.463183E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9154;5.000997746;1;algorithm=base,faithful=yes,bits=8
+76
+Passes: 2741, Time: 5.000815054, Avg: 0.0018244492, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2741;5.000815054;1;algorithm=base,faithful=yes,bits=1
+Passes: 9304, Time: 5.000654238, Avg: 5.374736E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9304;5.000654238;1;algorithm=base,faithful=yes,bits=8
+77
+Passes: 2790, Time: 5.000884758, Avg: 0.0017924318, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2790;5.000884758;1;algorithm=base,faithful=yes,bits=1
+Passes: 9116, Time: 5.000147940, Avg: 5.4850243E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9116;5.000147940;1;algorithm=base,faithful=yes,bits=8
+78
+Passes: 2734, Time: 5.001630638, Avg: 0.0018294187, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2734;5.001630638;1;algorithm=base,faithful=yes,bits=1
+Passes: 9296, Time: 5.001330409, Avg: 5.3800887E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9296;5.001330409;1;algorithm=base,faithful=yes,bits=8
+79
+Passes: 2747, Time: 5.000569251, Avg: 0.0018203746, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2747;5.000569251;1;algorithm=base,faithful=yes,bits=1
+Passes: 9090, Time: 5.001028550, Avg: 5.5016816E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9090;5.001028550;1;algorithm=base,faithful=yes,bits=8
+80
+Passes: 2700, Time: 5.000084673, Avg: 0.0018518833, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2700;5.000084673;1;algorithm=base,faithful=yes,bits=1
+Passes: 9375, Time: 5.000686523, Avg: 5.3340656E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9375;5.000686523;1;algorithm=base,faithful=yes,bits=8
+81
+Passes: 5906, Time: 5.001195962, Avg: 8.467992E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5906;5.001195962;1;algorithm=base,faithful=yes,bits=1
+Passes: 9338, Time: 5.000920811, Avg: 5.355452E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9338;5.000920811;1;algorithm=base,faithful=yes,bits=8
+82
+Passes: 2713, Time: 5.001834956, Avg: 0.0018436547, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2713;5.001834956;1;algorithm=base,faithful=yes,bits=1
+Passes: 9342, Time: 5.001428256, Avg: 5.353702E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9342;5.001428256;1;algorithm=base,faithful=yes,bits=8
+83
+Passes: 5960, Time: 5.000260301, Avg: 8.3896983E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5960;5.000260301;1;algorithm=base,faithful=yes,bits=1
+Passes: 9339, Time: 5.000970130, Avg: 5.3549313E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9339;5.000970130;1;algorithm=base,faithful=yes,bits=8
+84
+Passes: 2711, Time: 5.001372113, Avg: 0.001844844, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2711;5.001372113;1;algorithm=base,faithful=yes,bits=1
+Passes: 9104, Time: 5.000841723, Avg: 5.493016E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9104;5.000841723;1;algorithm=base,faithful=yes,bits=8
+85
+Passes: 5875, Time: 5.000431941, Avg: 8.5113733E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5875;5.000431941;1;algorithm=base,faithful=yes,bits=1
+Passes: 9333, Time: 5.001052012, Avg: 5.3584616E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9333;5.001052012;1;algorithm=base,faithful=yes,bits=8
+86
+Passes: 2772, Time: 5.001690219, Avg: 0.0018043616, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2772;5.001690219;1;algorithm=base,faithful=yes,bits=1
+Passes: 9257, Time: 5.000985383, Avg: 5.402382E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9257;5.000985383;1;algorithm=base,faithful=yes,bits=8
+87
+Passes: 5907, Time: 5.001168816, Avg: 8.466512E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5907;5.001168816;1;algorithm=base,faithful=yes,bits=1
+Passes: 9285, Time: 5.000904973, Avg: 5.3860043E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9285;5.000904973;1;algorithm=base,faithful=yes,bits=8
+88
+Passes: 2799, Time: 5.000998588, Avg: 0.0017867091, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2799;5.000998588;1;algorithm=base,faithful=yes,bits=1
+Passes: 9346, Time: 5.000688884, Avg: 5.3506193E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9346;5.000688884;1;algorithm=base,faithful=yes,bits=8
+89
+Passes: 2757, Time: 5.000958175, Avg: 0.001813913, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2757;5.000958175;1;algorithm=base,faithful=yes,bits=1
+Passes: 9350, Time: 5.001161325, Avg: 5.348836E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9350;5.001161325;1;algorithm=base,faithful=yes,bits=8
+90
+Passes: 2758, Time: 5.000788722, Avg: 0.0018131939, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2758;5.000788722;1;algorithm=base,faithful=yes,bits=1
+Passes: 9347, Time: 5.001004219, Avg: 5.350384E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9347;5.001004219;1;algorithm=base,faithful=yes,bits=8
+91
+Passes: 5855, Time: 5.001219955, Avg: 8.541793E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5855;5.001219955;1;algorithm=base,faithful=yes,bits=1
+Passes: 9252, Time: 5.001332444, Avg: 5.4056774E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9252;5.001332444;1;algorithm=base,faithful=yes,bits=8
+92
+Passes: 2721, Time: 5.001152843, Avg: 0.0018379834, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2721;5.001152843;1;algorithm=base,faithful=yes,bits=1
+Passes: 9194, Time: 5.000321182, Avg: 5.438679E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9194;5.000321182;1;algorithm=base,faithful=yes,bits=8
+93
+Passes: 5930, Time: 5.000739237, Avg: 8.4329495E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5930;5.000739237;1;algorithm=base,faithful=yes,bits=1
+Passes: 9330, Time: 5.000517961, Avg: 5.359612E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9330;5.000517961;1;algorithm=base,faithful=yes,bits=8
+94
+Passes: 5734, Time: 5.000971917, Avg: 8.721611E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5734;5.000971917;1;algorithm=base,faithful=yes,bits=1
+Passes: 9299, Time: 5.000174925, Avg: 5.37711E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9299;5.000174925;1;algorithm=base,faithful=yes,bits=8
+95
+Passes: 5933, Time: 5.000500199, Avg: 8.428283E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5933;5.000500199;1;algorithm=base,faithful=yes,bits=1
+Passes: 9085, Time: 5.000965551, Avg: 5.50464E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9085;5.000965551;1;algorithm=base,faithful=yes,bits=8
+96
+Passes: 2737, Time: 5.000939838, Avg: 0.0018271611, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2737;5.000939838;1;algorithm=base,faithful=yes,bits=1
+Passes: 9262, Time: 5.001182980, Avg: 5.399679E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9262;5.001182980;1;algorithm=base,faithful=yes,bits=8
+97
+Passes: 5756, Time: 5.000182592, Avg: 8.686905E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;5756;5.000182592;1;algorithm=base,faithful=yes,bits=1
+Passes: 9353, Time: 5.000829755, Avg: 5.3467654E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9353;5.000829755;1;algorithm=base,faithful=yes,bits=8
+98
+Passes: 2745, Time: 5.000701801, Avg: 0.0018217493, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2745;5.000701801;1;algorithm=base,faithful=yes,bits=1
+Passes: 9106, Time: 5.000250617, Avg: 5.4911606E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9106;5.000250617;1;algorithm=base,faithful=yes,bits=8
+99
+Passes: 2708, Time: 5.001143432, Avg: 0.0018468034, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-bitset;2708;5.001143432;1;algorithm=base,faithful=yes,bits=1
+Passes: 9267, Time: 5.000392813, Avg: 5.395913E-4, Limit: 1000000, Count: 78498, Valid: True
+pez-clj-boolean-array;9267;5.000392813;1;algorithm=base,faithful=yes,bits=8
