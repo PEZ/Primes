@@ -194,6 +194,27 @@
         (recur (inc idx))))
     (persistent! out)))
 
+(set! *unchecked-math* true)
+
+(defn sieve-ba
+  "boolean-array storage
+   Returns the raw sieve with only odd numbers present."
+  [^long n]
+  (if (< n 2)
+    (boolean-array 0)
+    (let [half-n (bit-shift-right n 1)
+          primes (boolean-array half-n true)
+          sqrt-n (unchecked-long (Math/ceil (Math/sqrt (double n))))]
+      (loop [p 3]
+        (when (< p sqrt-n)
+          (when (aget primes (unchecked-int (bit-shift-right p (unchecked-int 1))))
+            (loop [i (bit-shift-right (unchecked-multiply p p) 1)]
+              (when (< i half-n)
+                (aset primes (unchecked-int i) false)
+                (recur (unchecked-add i p)))))
+          (recur (unchecked-add p 2))))
+      primes)))
+
 (comment
   (defn loot [raw-sieve]
     (keep-indexed (fn [i v]
@@ -224,6 +245,7 @@
   (prof/profile (dotimes [_i 100000] (sieve-ba-unchecked-1 1000000)))
   (prof/profile (dotimes [_i 100000] (sieve-ba-unchecked-2 1000000)))
   (prof/profile (dotimes [_i 100000] (sieve-axvr 1000000)))
+  (prof/profile (dotimes [_i 100000] (sieve-ba 1000000)))
   (prof/serve-files 8080)
   )
 

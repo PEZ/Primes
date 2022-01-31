@@ -2,4 +2,4 @@
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}
         criterium/criterium {:mvn/version "0.4.6"}
         com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.5.1"}}
- :aliases {:prof {:jvm-opts ["-Djdk.attach.allowAttachSelf" #_"-XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints"]}}}
+ :aliases {:prof {:jvm-opts ["-Djdk.attach.allowAttachSelf" "-XX:+UnlockDiagnosticVMOptions" "-XX:+DebugNonSafepoints"]}}}
