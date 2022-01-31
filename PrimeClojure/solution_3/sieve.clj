@@ -62,8 +62,7 @@
   (time (count (loot (sieve 1000000))))
   (with-progress-reporting (quick-bench (sieve 1000000))))
 
-(defmacro sqr [n]
-  `(let [n# (unchecked-int ~n)] (unchecked-multiply-int n# n#)))
+(set! *unchecked-math* true)
 
 (set! *unchecked-math* true)
 
@@ -78,7 +77,7 @@
           sqrt-n (unchecked-long (Math/ceil (Math/sqrt (double n))))]
       (loop [p 3]
         (when (< p sqrt-n)
-          (when (aget primes (unchecked-int (bit-shift-right p (unchecked-int 1))))
+          (when (aget primes (bit-shift-right p (unchecked-int 1)))
             (loop [i (bit-shift-right (unchecked-multiply p p) 1)]
               (when (< i half-n)
                 (aset primes (unchecked-int i) false)
@@ -105,6 +104,8 @@
   (with-progress-reporting (bench (sieve-ba 1000000)))
   (time (do (sieve-ba 1000000) nil))
   )
+
+(set! *unchecked-math* true)
 
 (set! *unchecked-math* true)
 
@@ -415,8 +416,7 @@
   ;; Execution time mean : 5.173709 ms
 
   ;; This one takes a lot of time, you have been warned
-  (with-progress-reporting (bench (sieve 1000000)))
-  )
+  (with-progress-reporting (bench (sieve 1000000))))
 
 (def prev-results
   "Previous results to check against sieve results."
@@ -539,5 +539,4 @@
   (run {:variant :boolean-array-all :warm-up? true})
   (run {:variant :boolean-array-pre :warm-up? true})
   (run {:variant :boolean-array-pre-futures :warm-up? true})
-  (run {:variant :boolean-array-to-vector-futures :warm-up? true})
-  )
+  (run {:variant :boolean-array-to-vector-futures :warm-up? true}))

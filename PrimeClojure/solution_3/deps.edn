@@ -4,4 +4,6 @@
         com.clojure-goes-fast/clj-java-decompiler {:mvn/version "0.3.1"}}
  :aliases {:uberjar {:replace-deps {uberdeps/uberdeps {:mvn/version "1.1.2"}}
                      :replace-paths []
-                     :main-opts ["-m" "uberdeps.uberjar"]}}}
+                     :main-opts ["-m" "uberdeps.uberjar"]}
+           :build {:deps {io.github.clojure/tools.build {:git/tag "v0.7.5" :git/sha "34727f7"}}
+                   :ns-default build}}}

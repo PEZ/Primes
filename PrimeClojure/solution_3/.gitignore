@@ -3,3 +3,6 @@
 .calva/output-window/
 classes/
 target/
+bytecode*.class
+decompiled*.java
+.DS_Store
