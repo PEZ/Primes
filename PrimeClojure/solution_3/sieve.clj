@@ -9,7 +9,7 @@
   [n]
   (if (< n 2)
     []
-    (let [primes (vec (repeat (inc n) true))
+    (let [primes (vec (repeat (inc n) true)) ; start w  n
           primes (assoc primes 0 false 1 false)]
       (loop [p 2
              primes primes]
@@ -18,7 +18,7 @@
             (recur (inc p)
                    (loop [i (+ p p)
                           primes primes]
-                     (if (<= i n)
+                     (if (<= i n) ; <
                        (recur (+ i p) 
                               (assoc primes i false))
                        primes)))
