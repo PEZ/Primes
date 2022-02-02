@@ -3,65 +3,290 @@
   (:require [criterium.core :refer [bench quick-bench with-progress-reporting]])
   (:import [java.time Instant Duration]))
 
-;; Disable overflow checks on mathematical ops and warn when compiler is unable
-;; to optimise correctly.
-(set! *warn-on-reflection* true)
-(set! *unchecked-math* :warn-on-boxed)
 
 (defn sieve-v
   "Using regular Clojure persistent (immutable) vectors"
-  [^long n]
+  [n]
   (if (< n 2)
     []
-    (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
-          half-n (bit-shift-right n 1)]
-      (loop [p 3
-             primes (vec (repeat (bit-shift-right n 1) true))]
-        (if (< p sqrt-n)
-          (if (nth primes (bit-shift-right p 1))
-            (recur (+ p 2) (loop [i (bit-shift-right (* p p) 1)
-                                  primes primes]
-                             (if (< i half-n)
-                               (recur (+ i p) (assoc primes i false))
-                               primes)))
-            (recur (+ p 2) primes))
+    (let [primes (vec (repeat (inc n) true))
+          primes (assoc primes 0 false 1 false)]
+      (loop [p 2
+             primes primes]
+        (if (<= p n)
+          (if (nth primes p)
+            (recur (inc p)
+                   (loop [i (+ p p)
+                          primes primes]
+                     (if (<= i n)
+                       (recur (+ i p) 
+                              (assoc primes i false))
+                       primes)))
+            (recur (inc p)
+                   primes))
           primes)))))
 
-(defn sieve-v-transient
-  "Using a transient vector"
-  [^long n]
+(comment
+  (defn loot [primes]
+    (->> primes
+         (map (fn [i v]
+                (when v i))
+              (range (count primes)))
+         (remove nil?)))
+  (defn loot [primes]
+    (->> primes
+         (map-indexed (fn [i v]
+                        (when v i)))
+         (remove nil?)))
+  (defn loot [primes]
+    (keep-indexed (fn [i v]
+                    (when v i))
+                  primes))
+  (sieve-v 10)
+  (loot (sieve-v 20))
+  (count (loot (sieve-v 17)))
+  (count (loot (sieve-v 1000000)))
+  (time (sieve-v 1000000))
+  (time (do (sieve-v 1000000) nil))
+  (with-progress-reporting (quick-bench (sieve-v 1000000))))
+
+(comment
+  (require '[criterium.core :refer [bench quick-bench with-progress-reporting]])
+  (require '[clj-async-profiler.core :as prof])
+  (prof/serve-files 8080))
+
+(defn sieve-v
+  "Using regular Clojure persistent (immutable) vectors"
+  [n]
+  (if (< n 2)
+    []
+    (let [primes (vec (repeat (inc n) true))
+          primes (assoc primes 0 false 1 false)
+          sqrt-n (Math/ceil (Math/sqrt n))]
+      (loop [p 2
+             primes primes]
+        (if (< p sqrt-n)
+          (if (nth primes p)
+            (recur (inc p)
+                   (loop [i (* p p)
+                          primes primes]
+                     (if (<= i n)
+                       (recur (+ i p) 
+                              (assoc primes i false))
+                       primes)))
+            (recur (inc p)
+                   primes))
+          primes)))))
+
+(comment
+  (defn loot [primes]
+    (keep-indexed (fn [i v]
+                    (when v i))
+                  primes))
+  (sieve-v 10)
+  (loot (sieve-v 20))
+  (count (loot (sieve-v 17)))
+  (count (loot (sieve-v 1000000)))
+  (time (sieve-v 1000000))
+  (time (do (sieve-v 1000000) nil))
+  (with-progress-reporting (quick-bench (sieve-v 1000000)))
+  )
+
+(comment
+  (require '[criterium.core :refer [bench quick-bench with-progress-reporting]])
+  (require '[clj-async-profiler.core :as prof])
+  (prof/serve-files 8080))
+
+(defn sieve-v
+  "Using regular Clojure persistent (immutable) vectors"
+  [n]
   (if (< n 2)
     []
     (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
-          half-n (bit-shift-right n 1)]
+          half-n (/ n 2)]
       (loop [p 3
-             primes (transient (vec (repeat (bit-shift-right n 1) true)))]
+             primes (vec (repeat half-n true))]
         (if (< p sqrt-n)
-          (if (nth primes (bit-shift-right p 1))
-            (recur (+ p 2) (loop [i (bit-shift-right (* p p) 1)
-                                  primes primes]
-                             (if (< i half-n)
-                               (recur (+ i p) (assoc! primes i false))
-                               primes)))
-            (recur (+ p 2) primes))
-          (persistent! primes))))))
+          (if (nth primes (/ p 2))
+            (recur (+ p 2)
+                   (loop [i (int (/ (* p p) 2))
+                          primes primes]
+                     (if (< i half-n)
+                       (recur (+ i p)
+                              (assoc primes i false))
+                       primes)))
+            (recur (+ p 2)
+                   primes))
+          primes)))))
 
 (comment
-  (def sieve sieve-v)
-  (def sieve sieve-v-transient)
   (defn loot [raw-sieve]
     (keep-indexed (fn [i v]
                     (when v (if (zero? i)
                               2
                               (inc (* i 2)))))
                   raw-sieve))
-  (loot (sieve 1))
-  (loot (sieve 10))
-  (loot (sieve 100))
-  (time (count (loot (sieve 1000000))))
-  (with-progress-reporting (quick-bench (sieve 1000000))))
+  (loot (sieve-v 1))
+  (loot (sieve-v 10))
+  (loot (sieve-v 100))
+  (time (count (loot (sieve-v 1000000))))
+  (with-progress-reporting (quick-bench (sieve-v 1000000))))
+
+(defn sieve-v-transient
+  "Using transient (mutable) Clojure vectors"
+  [n]
+  (if (< n 2)
+    []
+    (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
+          half-n (/ n 2)]
+      (loop [p 3
+             primes (transient (vec (repeat half-n true)))]
+        (if (< p sqrt-n)
+          (if (nth primes (/ p 2))
+            (recur (+ p 2)
+                   (loop [i (int (/ (* p p) 2))
+                          primes primes]
+                     (if (< i half-n)
+                       (recur (+ i p)
+                              (assoc! primes i false))
+                       primes)))
+            (recur (+ p 2)
+                   primes))
+          (persistent! primes))))))
+
+(defn sieve-v-transient
+  "Using transient (mutable) Clojure vectors"
+  [^long n]
+  (if (< n 2)
+    []
+    (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
+          half-n (long (/ n 2))
+          primes (transient (vec (repeat half-n true)))]
+      (loop [p 3]
+        (when (< p sqrt-n)
+          (when (nth primes (/ p 2))
+            (loop [i (int (/ (* p p) 2))]
+              (when (< i half-n)
+                (assoc! primes i false)
+                (recur (+ i p)))))
+          (recur (+ p 2))))
+      (persistent! primes))))
+
+(comment
+  (defn loot [raw-sieve]
+    (keep-indexed (fn [i v]
+                    (when v (if (zero? i)
+                              2
+                              (inc (* i 2)))))
+                  raw-sieve))
+  (loot (sieve-v-transient 1))
+  (loot (sieve-v-transient 10))
+  (loot (sieve-v-transient 100))
+  (time (count (loot (sieve-v-transient 1000000))))
+  (with-progress-reporting (quick-bench (sieve-v-transient 1000000))))
+
+;; Disable overflow checks on mathematical ops and warn when compiler is unable
+;; to optimise correctly.
+(set! *warn-on-reflection* true)
+(set! *unchecked-math* :warn-on-boxed)
+
+(defn sieve-boolean-array
+  "Using a Java array of booleans"
+  [^long n]
+  (if (< n 2)
+    []
+    (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
+          half-n (long (/ n 2))
+          primes (boolean-array half-n true)]
+      (loop [p 3]
+        (when (< p sqrt-n)
+          (when (aget primes (/ p 2))
+            (loop [i (int (/ (* p p) 2))]
+              (when (< i half-n)
+                (aset primes i false)
+                (recur (+ i p)))))
+          (recur (+ p 2))))
+      primes)))
+
+(comment
+  (defn loot [raw-sieve]
+    (keep-indexed (fn [^long i v]
+                    (when v (if (zero? i)
+                              2
+                              (inc (* i 2)))))
+                  raw-sieve))
+  (loot (sieve-boolean-array 1))
+  (loot (sieve-boolean-array 10))
+  (loot (sieve-boolean-array 100))
+  (time (count (loot (sieve-boolean-array 1000000))))
+  (time (do (sieve-boolean-array 1000000) nil))
+  (with-progress-reporting (quick-bench (sieve-boolean-array 1000000))))
 
 (set! *unchecked-math* true)
+
+(defn sieve-boolean-array
+  "Using a Java array of booleans"
+  [^long n]
+  (if (< n 2)
+    []
+    (let [sqrt-n (long (Math/ceil (Math/sqrt n)))
+          half-n (long (/ n 2))
+          primes (boolean-array half-n true)]
+      (loop [p 3]
+        (when (< p sqrt-n)
+          (when (aget primes (bit-shift-right p 1))
+            (loop [i (int (bit-shift-right (* p p) 1))] ; remove int cast
+              (when (< i half-n)
+                (aset primes i false)
+                (recur (+ i p)))))
+          (recur (+ p 2))))
+      primes)))
+
+(comment
+  (defn loot [raw-sieve]
+    (keep-indexed (fn [^long i v]
+                    (when v (if (zero? i)
+                              2
+                              (inc (* i 2)))))
+                  raw-sieve))
+  (loot (sieve-boolean-array 1))
+  (loot (sieve-boolean-array 10))
+  (loot (sieve-boolean-array 100))
+  (time (count (loot (sieve-boolean-array 1000000))))
+  (time (do (sieve-boolean-array 1000000) nil))
+  (with-progress-reporting (quick-bench (sieve-boolean-array 1000000))))
+
+(defn sieve-ba
+  "Using a Java array of booleans"
+  [^long n]
+  (if (< n 2)
+    (boolean-array 0)
+    (let [sqrt-n (unchecked-long (Math/ceil (Math/sqrt (double n))))
+          half-n (unchecked-int (bit-shift-right n 1))
+          primes (boolean-array half-n)]
+      (loop [p 3]
+        (when (< p sqrt-n)
+          (when-not (aget primes (bit-shift-right p 1))
+            (loop [i (long (bit-shift-right (* p p) 1))]
+              (when (< i half-n)
+                (aset primes i true)
+                (recur (+ i p)))))
+          (recur (+ p 2))))
+      primes)))
+
+(comment
+  (defn loot [raw-sieve]
+    (keep-indexed (fn [^long i v]
+                    (when v (if (zero? i)
+                              2
+                              (inc (* i 2)))))
+                  raw-sieve))
+  (loot (sieve-boolean-array 1))
+  (loot (sieve-boolean-array 10))
+  (loot (sieve-boolean-array 100))
+  (time (count (loot (sieve-boolean-array 1000000))))
+  (time (do (sieve-boolean-array 1000000) nil))
+  (with-progress-reporting (quick-bench (sieve-boolean-array 1000000))))
 
 (defn sieve-ba
   "boolean-array storage
