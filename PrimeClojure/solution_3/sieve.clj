@@ -1,6 +1,5 @@
 (ns sieve
   "Clojure implementations of The Sieve of Eratosthenes by Peter Strömberg (a.k.a. PEZ)"
-  (:require [criterium.core :refer [bench quick-bench with-progress-reporting]])
   (:import [java.time Instant Duration]))
 
 ;; Disable overflow checks on mathematical ops and warn when compiler is unable
@@ -59,6 +58,7 @@
   (loot (sieve 10))
   (loot (sieve 100))
   (time (count (loot (sieve 1000000))))
+  (require '[criterium.core :refer [bench quick-bench with-progress-reporting]])
   (with-progress-reporting (quick-bench (sieve 1000000))))
 
 (set! *unchecked-math* true)
